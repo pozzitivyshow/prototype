@@ -80,7 +80,7 @@ nav ul li a:hover{
   justify-content: center;
   object-fit: cover;
 }
-.bottom-boxes{
+.bottom-box{
   width:100%;
   height:93vh;
   background:whitesmoke;
@@ -96,11 +96,18 @@ nav ul li a:hover{
   background-position: -225px;
   background-size: cover;
 }
-.bottom-boxes-image-half{
+.bottom-box:nth-child(1) .bottom-boxes-image-half{
   width: 70vw;
   height: 100%;
   background-image: url(keyboard-with-ball.png);
   background-position: -150px;
+  background-size: cover;
+}
+.bottom-box:nth-child(2) .bottom-boxes-image-half{
+  width: 70vw;
+  height: 100%;
+  background-image: url(sound-pocket-with-ball.png);
+  background-position: -200px;
   background-size: cover;
 }
 .text-half{
