@@ -26,12 +26,62 @@ header {
   font-size:1.5vh;
 }
 #outside {
-align-items: center;
-width:100%;
-height:7vh;
-border-bottom:dashed #000; 
-border-width:2px;
-background-color:whitesmoke;
+  height: 7vh;
+}
+.top-part{
+  height:7vh;
+  border-bottom:dashed #000; 
+  border-width:2px;
+  background-color:whitesmoke;
+  width: 100vw;
+  vertical-align:top;
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown-part{
+  width: 100vw;
+  height: 40vh;
+  background-color: whitesmoke;
+  position: fixed;
+  margin-top: 47vh;
+  display: none;
+  border-bottom: dashed #000 2px;
+}
+.dropdown-image{
+  width: 50vw;
+  height: 100%;
+  background: url(sound-pocket-with-ball.png);
+  background-size: cover;
+  background-position: 0 -25px;
+  border-left: dashed #000 2px; 
+
+}
+.dropdown-text-discover, .dropdown-text-accessories{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  padding-left: 1vw;
+}
+.dropdown-text-accessories{
+  height: 85%;
+}
+.dropdown-text-discover h3, .dropdown-text-accessories h3{
+  font-size: 2rem;
+  color: #969696;
+}
+.dropdown-text-discover h4, .dropdown-text-accessories h4{
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+.dropdown-text-discover p, .dropdown-text-accessories p{
+  font-size: 1.5rem;
+  font-weight: 1000;
 }
 .logo a{
   display: inline;
@@ -63,6 +113,7 @@ nav ul li a{
 nav ul li a:hover{
   color:#ff0000;
   transition:.5s;
+
 }
 .container{
   text-align: center;
@@ -95,6 +146,7 @@ nav ul li a:hover{
   background-image: url(watch-with-ball.png);
   background-position: -225px;
   background-size: cover;
+  border-right: dashed #000 2px;
 }
 .bottom-box:nth-child(1) .bottom-boxes-image-half{
   width: 70vw;
@@ -102,6 +154,7 @@ nav ul li a:hover{
   background-image: url(keyboard-with-ball.png);
   background-position: -150px;
   background-size: cover;
+  border-right: dashed #000 2px;
 }
 .bottom-box:nth-child(2) .bottom-boxes-image-half{
   width: 70vw;
@@ -109,6 +162,7 @@ nav ul li a:hover{
   background-image: url(sound-pocket-with-ball.png);
   background-position: -200px;
   background-size: cover;
+  border-right: dashed #000 2px;
 }
 .text-half{
   padding-left: 1rem;
@@ -202,7 +256,7 @@ nav ul li a:hover{
   z-index:5;
 }
 footer {
-  border-top: dashed #000;
+  border-top: dashed #000 2px;
     background-color: white;
     color: black;
     text-align: center;
