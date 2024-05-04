@@ -48,6 +48,17 @@ header {
   margin-top: 47vh;
   display: none;
   border-bottom: dashed #000 2px;
+  justify-content: space-between;
+}
+.just-header-link-text{
+  width: 100vw;
+  height: 40vh;
+  background-color: whitesmoke;
+  position: fixed;
+  margin-top: 47vh;
+  display: none;
+  border-bottom: dashed #000 2px;
+  justify-content: space-between;
 }
 .dropdown-image{
   width: 50vw;
@@ -67,9 +78,6 @@ header {
   padding-bottom: 1vh;
   padding-top: 1vh;
   padding-left: 1vw;
-}
-.dropdown-text-accessories{
-  height: 85%;
 }
 .dropdown-text-discover h3, .dropdown-text-accessories h3{
   font-size: 2rem;
@@ -110,11 +118,11 @@ nav ul li a{
   font-weight:750;
   transition:.5s;
 }
-nav ul li a:hover{
+/*nav ul li a:hover{
   color:#ff0000;
   transition:.5s;
 
-}
+}*/
 .container{
   text-align: center;
   display:overlay;
