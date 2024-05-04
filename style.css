@@ -22,6 +22,9 @@ header {
   margin-top: -7vh ;
   font-size: 2vh;
 }
+.disable-scroll{
+  overflow: hidden;
+}
 .reg{
   font-size:1.5vh;
 }
@@ -93,6 +96,23 @@ header {
   font-size: 1.7rem;
   margin-bottom: .75rem;
 }
+.box-dropdown-part{
+  height: 40vh;
+  width: 100vw;
+  background-color: whitesmoke;
+  position: fixed;
+  margin-top: 47vh;
+  border-bottom: dashed #000 2px;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: all .3s;
+  display: none;
+}
+.active-box-display{
+  height: 40vh;
+  opacity: 1;
+
+}
 .logo a{
   display: inline;
   color: black;
@@ -100,8 +120,9 @@ header {
   font-size: 2.5rem;
 }
 nav ul{
-  padding-right: 10px;
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
   color: black;
@@ -113,18 +134,29 @@ nav ul li {
   margin-right: 20px;
   color: black;
   transition: .25s;
+  text-align: center;
 }
 nav ul li a{
   font-size: 3vh;
   color:black;
   font-weight:750;
   transition:.5s;
+  text-align: center;
 }
 /*nav ul li a:hover{
   color:#ff0000;
   transition:.5s;
 
 }*/
+#box-icon a {
+  display: flex;
+  width: 1.75rem;
+  justify-content: center;
+  align-items: center;
+}
+#box-icon a img{
+  width: 1.5rem;
+}
 .container{
   text-align: center;
   display:overlay;
