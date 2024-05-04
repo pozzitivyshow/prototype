@@ -34,11 +34,12 @@ function showDropdown(event) {
 function boxDisplay(){
     if (boxDropdown.style.display == "flex"){
         boxDropdown.style.display = "none";
+        body.classList.remove("disable-scroll");
     }
     else{
         boxDropdown.style.display = "flex";
+        body.classList.add("disable-scroll");
     }
-    body.classList.toggle("disable-scroll");
 }
 
 boxButton.addEventListener("click",boxDisplay)
