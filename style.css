@@ -74,22 +74,24 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-around;
+  justify-content: flex-start;
   padding-bottom: 1vh;
   padding-top: 1vh;
   padding-left: 1vw;
 }
 .dropdown-text-discover h3, .dropdown-text-accessories h3{
-  font-size: 2rem;
-  color: #969696;
+  margin-bottom: 1.25rem;
+  margin-top: 1rem;
+  font-size: 2.25rem;
+  color: #ff0000;
 }
 .dropdown-text-discover h4, .dropdown-text-accessories h4{
   font-size: 1.8rem;
   color: #ff0000;
 }
 .dropdown-text-discover p, .dropdown-text-accessories p{
-  font-size: 1.5rem;
-  font-weight: 1000;
+  font-size: 1.7rem;
+  margin-bottom: .75rem;
 }
 .logo a{
   display: inline;
